@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/projectFragment">
+
+    <fragment
+        android:id="@+id/mapsHomeFragment"
+        android:name="com.alistair.treecensus.ui.home.MapsHomeFragment"
+        android:label="fragment_maps_home"
+        tools:layout="@layout/fragment_maps_home" />
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.alistair.treecensus.ui.project.ProjectFragment"
+        android:label="ProjectFragment" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.alistair.treecensus.ui.settings.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+</navigation>
